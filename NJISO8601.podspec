@@ -7,7 +7,7 @@
 Pod::Spec.new do |s|
   s.deprecated_in_favor_of = "ISO8601-re2c" # just renamed
   s.name             = "NJISO8601"
-  s.version          = "0.2.0"
+  s.version          = "0.2.1"
   s.summary          = "ISO8601 formatter"
   s.homepage         = "http://github.com/bcherry/iso8601/"
   # s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
