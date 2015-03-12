@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   # s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'BSD'
   s.author           = { "Eric Jensen" => "ej@pushd.com" }
+  s.social_media_url = 'https://twitter.com/ej'
   s.source           = { :git => "https://github.com/bcherry/iso8601.git", :tag => s.version.to_s }
 
   s.requires_arc = false
