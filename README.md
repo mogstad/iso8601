@@ -1,4 +1,13 @@
-## Installation
+NSFormatter for ISO 8601
+========================
+
+A Cocoa NSFormatter subclass for converting ISO 8601 formatted string to NSDate, and vice versa.
+
+The parser is implemented using [re2c](http://re2c.org).
+Thanks to [re2c](http://re2c.org), it is much faster than NSDateFormatter is.
+
+Installation
+------------
 
 NJISO8601 is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -8,36 +17,6 @@ it, simply add the following line to your Podfile:
 Note that the generated parser is committed directly to this repository. This may not be optimal.
 
 There have been attemts to use cocoapods' prebuild command to fix this, with limited success. Check the podspec for attempted solution.
-
-NSFormatter for ISO 8601
-========================
-
-A Cocoa NSFormatter subclass for converting ISO 8601 formatted string to NSDate, and vice versa.
-
-The parser is implemented using [re2c](http://re2c.org).
-Thanks to [re2c](http://re2c.org), it is much faster than NSDateFormatter is.
-
-
-Supported Formats
------------------
-
-* Calendar Date
-* Ordinal Date
-* Week Date
-* Local Time with Decimal Fractions
-* Midnight
-* Time Zone
-
-Unsupported Formats
--------------------
-
-* BC Date
-* Basic Format of Ordinal Date Expanded Representation (Year > 9999)
-* Local Time with Leap Second (Second >= 60.0)
-* Time Inverval
-* Duration
-* Recurring Time Interval
-
 
 Usage
 -----
@@ -65,3 +44,23 @@ Also, you can customize output format like this:
     [formatter setFractionSeparator:NJISO8601FormatterFractionSeparatorDot];
     [formatter setFractionDigits:6];
     [formatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:(8 * 60 * 60)]];
+
+Supported Formats
+-----------------
+
+* Calendar Date
+* Ordinal Date
+* Week Date
+* Local Time with Decimal Fractions
+* Midnight
+* Time Zone
+
+Unsupported Formats
+-------------------
+
+* BC Date
+* Basic Format of Ordinal Date Expanded Representation (Year > 9999)
+* Local Time with Leap Second (Second >= 60.0)
+* Time Inverval
+* Duration
+* Recurring Time Interval
