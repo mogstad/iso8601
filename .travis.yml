@@ -1,0 +1,6 @@
+language: objective-c
+xcode_sdk: iphonesimulator
+xcode_project: ISO8601.xcodeproj
+xcode_scheme: ISO8601
+before_script:
+  - pod lib lint --quick

@@ -10,29 +10,29 @@
 	<string>ISO8601</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>B610CCF0-3481-4511-B90C-0B9EF36FB8F2</key>
-		<string>https://github.com/PAM-AS/iso8601.git</string>
+		<key>517DF162CEBA9CF89FD710BA9D92D993E87DE6CA</key>
+		<string>github.com:bcherry/iso8601.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ISO8601.xcodeproj/project.xcworkspace</string>
+	<string>ISO8601.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B610CCF0-3481-4511-B90C-0B9EF36FB8F2</key>
+		<key>517DF162CEBA9CF89FD710BA9D92D993E87DE6CA</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/PAM-AS/iso8601.git</string>
+	<string>github.com:bcherry/iso8601.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B610CCF0-3481-4511-B90C-0B9EF36FB8F2</string>
+	<string>517DF162CEBA9CF89FD710BA9D92D993E87DE6CA</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B610CCF0-3481-4511-B90C-0B9EF36FB8F2</string>
+			<string>517DF162CEBA9CF89FD710BA9D92D993E87DE6CA</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iso8601</string>
 		</dict>
