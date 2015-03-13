@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "ISO8601-re2c"
-  s.version          = "0.3.0"
+  s.version          = "0.3.1"
   s.summary          = "Fast ISO-8601 NSFormatter subclass to parse and format date strings using re2c scanner"
   s.homepage         = "http://github.com/bcherry/iso8601/"
   # s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
