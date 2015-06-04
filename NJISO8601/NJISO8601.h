@@ -1,4 +1,4 @@
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import "NJISO8601Formatter.h"
 
 //! Project version number for NJISO8601.
