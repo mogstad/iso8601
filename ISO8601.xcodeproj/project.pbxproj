@@ -13,7 +13,6 @@
 		2D4E76771B20C8590087052E /* NJISO8601Parser.re in Sources */ = {isa = PBXBuildFile; fileRef = CFB1B85A1519AFE300176C89 /* NJISO8601Parser.re */; };
 		2D4E76A31B20D6260087052E /* UNIX2003.c in Sources */ = {isa = PBXBuildFile; fileRef = CFB1B860151AF48200176C89 /* UNIX2003.c */; };
 		2D4E76A41B20D6400087052E /* NJISO8601.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4E76591B20C78D0087052E /* NJISO8601.framework */; };
-		CFB1B8201519734900176C89 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB1B81F1519734900176C89 /* SenTestingKit.framework */; };
 		CFB1B8211519734900176C89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB1B8011519734800176C89 /* UIKit.framework */; };
 		CFB1B8221519734900176C89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB1B8031519734800176C89 /* Foundation.framework */; };
 		CFB1B82D1519734900176C89 /* NJISO8601FormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB1B82C1519734900176C89 /* NJISO8601FormatterTests.m */; };
@@ -51,8 +50,7 @@
 		CFB1B8011519734800176C89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CFB1B8031519734800176C89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CFB1B8051519734800176C89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CFB1B81E1519734900176C89 /* NJISO8601Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NJISO8601Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFB1B81F1519734900176C89 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CFB1B81E1519734900176C89 /* NJISO8601Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = NJISO8601Tests.xctest; path = NJISO8601Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB1B8271519734900176C89 /* ISO8601Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ISO8601Tests-Info.plist"; sourceTree = "<group>"; };
 		CFB1B82B1519734900176C89 /* NJISO8601FormatterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NJISO8601FormatterTests.h; sourceTree = "<group>"; };
 		CFB1B82C1519734900176C89 /* NJISO8601FormatterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NJISO8601FormatterTests.m; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D4E76A41B20D6400087052E /* NJISO8601.framework in Frameworks */,
-				CFB1B8201519734900176C89 /* SenTestingKit.framework in Frameworks */,
 				CFB1B8211519734900176C89 /* UIKit.framework in Frameworks */,
 				CFB1B8221519734900176C89 /* Foundation.framework in Frameworks */,
 			);
@@ -117,7 +114,7 @@
 		CFB1B7FE1519734800176C89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CFB1B81E1519734900176C89 /* NJISO8601Tests.octest */,
+				CFB1B81E1519734900176C89 /* NJISO8601Tests.xctest */,
 				2D4E76591B20C78D0087052E /* NJISO8601.framework */,
 			);
 			name = Products;
@@ -129,7 +126,6 @@
 				CFB1B8011519734800176C89 /* UIKit.framework */,
 				CFB1B8031519734800176C89 /* Foundation.framework */,
 				CFB1B8051519734800176C89 /* CoreGraphics.framework */,
-				CFB1B81F1519734900176C89 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -194,7 +190,6 @@
 				CFB1B8191519734900176C89 /* Sources */,
 				CFB1B81A1519734900176C89 /* Frameworks */,
 				CFB1B81B1519734900176C89 /* Resources */,
-				CFB1B81C1519734900176C89 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -203,8 +198,8 @@
 			);
 			name = NJISO8601Tests;
 			productName = ISO8601Tests;
-			productReference = CFB1B81E1519734900176C89 /* NJISO8601Tests.octest */;
-			productType = "com.apple.product-type.bundle.ocunit-test";
+			productReference = CFB1B81E1519734900176C89 /* NJISO8601Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -213,7 +208,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = "";
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					2D4E76581B20C78D0087052E = {
@@ -255,22 +250,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		CFB1B81C1519734900176C89 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D4E76541B20C78D0087052E /* Sources */ = {
@@ -419,6 +398,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -453,6 +433,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -472,12 +453,11 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "ISO8601Tests/ISO8601Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -486,12 +466,11 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "ISO8601Tests/ISO8601Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -513,6 +492,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				"GCC_GENERATE_TEST_COVERAGE_FILES[sdk=iphonesimulator*]" = YES;
 				"GCC_INSTRUMENT_PROGRAM_FLOW_ARCS[sdk=iphonesimulator*]" = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -536,12 +516,11 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "ISO8601Tests/ISO8601Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Profile;
 		};

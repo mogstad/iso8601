@@ -6,9 +6,9 @@
  *
  */
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
 
-@interface NJISO8601FormatterTests : SenTestCase
+@interface NJISO8601FormatterTests : XCTestCase
 
 @end
