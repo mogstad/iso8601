@@ -144,8 +144,8 @@ NSDate *NJISO8601DateFromString(NSString *aString)
 
 - (BOOL)appendDateStringWithYear:(int)aYear month:(int)aMonth day:(int)aDay absoluteTime:(CFAbsoluteTime)aAbsoluteTime timeZone:(CFTimeZoneRef)aTimeZone toString:(NSMutableString *)aString
 {
-    int sDayOfWeek;
-    int sWeekOfYear;
+    int sDayOfWeek = 0;
+    int sWeekOfYear = 0;
 
     if ((mDateStyle == NJISO8601FormatterDateStyleWeekExtended) || (mDateStyle == NJISO8601FormatterDateStyleWeekBasic))
     {
@@ -237,20 +237,20 @@ NSDate *NJISO8601DateFromString(NSString *aString)
         {
             sMinutesFromGMT *= -1;
 
-            [aString appendFormat:@"-%02d", (sMinutesFromGMT / 60)];
+            [aString appendFormat:@"-%02ld", (sMinutesFromGMT / 60)];
         }
         else
         {
-            [aString appendFormat:@"+%02d", (sMinutesFromGMT / 60)];
+            [aString appendFormat:@"+%02ld", (sMinutesFromGMT / 60)];
         }
 
         if (mTimeZoneStyle == NJISO8601FormatterTimeZoneStyleExtended)
         {
-            [aString appendFormat:@":%02d", (sMinutesFromGMT % 60)];
+            [aString appendFormat:@":%02ld", (sMinutesFromGMT % 60)];
         }
         else
         {
-            [aString appendFormat:@"%02d", (sMinutesFromGMT % 60)];
+            [aString appendFormat:@"%02ld", (sMinutesFromGMT % 60)];
         }
     }
 }
