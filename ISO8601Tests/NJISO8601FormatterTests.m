@@ -7,7 +7,7 @@
  */
 
 #import "NJISO8601FormatterTests.h"
-#import "NJISO8601Formatter.h"
+#import <NJISO8601/NJISO8601.h>
 
 
 static NSString *gTestStrings[][2] =

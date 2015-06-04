@@ -7,7 +7,7 @@
  */
 
 #import "NJISO8601ParserDef.h"
-
+#import <Foundation/Foundation.h>
 
 id NJISO8601ParseString(NSString *aString, NSString **aError);
 
